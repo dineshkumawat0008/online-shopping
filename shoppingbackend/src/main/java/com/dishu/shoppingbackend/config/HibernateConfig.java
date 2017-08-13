@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class HibernateConfig {
 	
-	/* Database configuration variables */
+	/* Database configuration private variables */
 	private final static String DATABASE_DRIVER="org.h2.Driver";
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/onlineshopping";
