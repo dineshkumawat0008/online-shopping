@@ -11,9 +11,19 @@ $(function() {
 		$('#listProducts').addClass('active');
 		break;
 	default:
+		if(menu=="Home") break;
 		$('#listProducts').addClass('active');
 		$('#a_'+menu).addClass('active');
 		break;
 	}
+	
+	//dataTable code
+	var $table=$('#productListTable');
+	
+	//execute this table when we have this table
+	if($table.length){
+		console.log("inside table");
+	}
+	
 
 });
