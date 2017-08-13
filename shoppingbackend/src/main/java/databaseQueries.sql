@@ -60,13 +60,13 @@ CREATE TABLE product (
 
 
 INSERT INTO product (code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
-VALUES ('PRDABC123DEFX', 'iPhone 5s', 'apple', 'This is one of the best phone available in the market right now!', 18000, 5, true, 3, 2 );
+VALUES ('PRDABC123DEFX', 'iPhone 7 plus', 'apple', 'This is one of the best phone available in the market right now!', 67999, 5, true, 3, 2 );
 
 INSERT INTO product (code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
-VALUES ('PRDDEF123DEFX', 'Samsung s7', 'samsung', 'A smart phone by samsung!', 32000, 2, true, 3, 3 );
+VALUES ('PRDDEF123DEFX', 'Honor 8Pro', 'huawei', 'A smart phone by huawei!', 29999, 2, true, 3, 3 );
 
 INSERT INTO product (code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
-VALUES ('PRDPQR123WGTX', 'Google Pixel', 'google', 'This is one of the best android smart phone available in the market right now!', 57000, 5, true, 3, 2 );
+VALUES ('PRDPQR123WGTX', 'OnePlus 5', 'OnePlus', 'This is one of the best android smart phone available in the market right now!', 32999, 5, true, 3, 2 );
 
 INSERT INTO product (code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
 VALUES ('PRDMNO123PQRX', ' Macbook Pro', 'apple', 'This is one of the best laptops available in the market right now!', 54000, 3, true, 1, 2 );

@@ -3,8 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <spring:url var="css" value="/resources/css" />
-<spring:url var="js" value="/resources/js" />
-<spring:url var="images" value="/resources/images" />
+
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
@@ -20,10 +19,6 @@
 
 <title>Online Shopping-${title}</title>
 
-<script type="text/javascript">
-	window.menu = '${title}';
-	window.contextRoot = '${contextRoot}';
-</script>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -51,54 +46,42 @@
 	<div class="wrapper">
 
 		<!-- Navigation -->
-		<%@include file="./shared/navbar.jsp"%>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="${contextRoot}/home">Online Shop</a>
+				</div>
+
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
 
 		<!-- Page Content -->
 
 		<div class="content">
-			<!-- loading the home content -->
-			<c:if test="${userClickHome==true}">
-				<%@include file="home.jsp"%>
-			</c:if>
+			<div class="container">
 
-			<c:if test="${userClickAboutUs==true}">
-				<%@include file="about.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickContactUs==true}">
-				<%@include file="contact.jsp"%>
-			</c:if>
-
-			<c:if
-				test="${userClickAllProducts==true or userClickCategoryProducts==true}">
-				<%@include file="listProducts.jsp"%>
-			</c:if>
-			
-			<c:if test="${userClickShowProduct==true}">
-				<%@include file="singleProduct.jsp"%>
-			</c:if>
-
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="jumbotron">
+							<h1>${errorTitle}</h1>
+							<hr>
+							<blockquote>
+							
+							${errorDescription}
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
 		<!-- footer comes here -->
 		<%@include file="./shared/footer.jsp"%>
-		<!-- /.container -->
-
-		<!-- jQuery -->
-		<script src="${js}/jquery.js"></script>
-
-		<!-- self coded java script -->
-		<script src="${js}/myapp.js"></script>
-
-		<!-- dataTable plugin -->
-		<script src="${js}/jquery.dataTables.js"></script>
-
-		<!-- dataTable js -->
-		<script src="${js}/dataTables.bootstrap.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="${js}/bootstrap.min.js"></script>
+		
 
 	</div>
 
