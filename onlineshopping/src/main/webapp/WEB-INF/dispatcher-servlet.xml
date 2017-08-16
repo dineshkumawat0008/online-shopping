@@ -32,7 +32,7 @@
 	<mvc:annotation-driven />
 	<mvc:resources location="/assets/" mapping="/resources/**" />
 	
-	<!---- WEBFLOW CONFIGURATION-- -->
+	<!-- WEBFLOW CONFIGURATION -->
 	<!-- Entry point for the flow -->
 	
 	<wf:flow-executor id="flowExecutor" flow-registry="flowRegistry"/>
