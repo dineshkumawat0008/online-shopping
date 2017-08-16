@@ -18,7 +18,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	
 	
 	@Autowired
-	SessionFactory sessionFactory;
+	private SessionFactory sessionFactory;
 	
 
 	@Override

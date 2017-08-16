@@ -51,42 +51,18 @@
 	<div class="wrapper">
 
 		<!-- Navigation -->
-		<%@include file="./shared/navbar.jsp"%>
+		<a href="${flowExecutionUrl}&_eventId_home">Home</a>
 
 		<!-- Page Content -->
 
 		<div class="content">
-			<!-- loading the home content -->
-			<c:if test="${userClickHome==true}">
-				<%@include file="home.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickAboutUs==true}">
-				<%@include file="about.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickContactUs==true}">
-				<%@include file="contact.jsp"%>
-			</c:if>
-
-			<c:if
-				test="${userClickAllProducts==true or userClickCategoryProducts==true}">
-				<%@include file="listProducts.jsp"%>
-			</c:if>
 			
-			<c:if test="${userClickShowProduct==true}">
-				<%@include file="singleProduct.jsp"%>
-			</c:if>
-			
-			<c:if test="${userClickManageProducts==true}">
-				<%@include file="manageProducts.jsp"%>
-			</c:if>
 
 		</div>
 
 
 		<!-- footer comes here -->
-		<%@include file="./shared/footer.jsp"%>
+		<%@include file="../../shared/footer.jsp"%>
 		<!-- /.container -->
 
 		<!-- jQuery -->

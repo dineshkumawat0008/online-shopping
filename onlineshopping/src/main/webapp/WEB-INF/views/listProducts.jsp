@@ -40,7 +40,7 @@
 
 			<div class="row">
 				<div class="col-xs-12">
-					<table class="table table-striped table-borderd" id="productListTable">
+					<table class="table table-striped table-bordered" id="productListTable">
 						<thead>
 							<tr>
 								<th></th>
@@ -51,16 +51,7 @@
 								<th></th>
 							</tr>
 						</thead>
-						<tfoot>
-							<tr>
-								<th></th>
-								<th>NAME</th>
-								<th>BRAND</th>
-								<th>PRICE</th>
-								<th>Qty. Available</th>
-								<th></th>
-							</tr>
-						</tfoot>
+						
 					
 					</table>
 				
